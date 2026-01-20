@@ -167,7 +167,7 @@ abstract contract EIP7702DeleGatorCore is
     /**
      * @notice Allows this contract to receive the chains native token
      */
-    receive() external payable { }
+    receive() external payable virtual { }
 
     /**
      * @notice Redeems a delegation on the DelegationManager and executes the specified executions on behalf of the root delegator.
